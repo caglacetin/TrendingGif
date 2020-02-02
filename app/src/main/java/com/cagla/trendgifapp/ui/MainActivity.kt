@@ -1,7 +1,8 @@
-package com.cagla.trendgifapp
+package com.cagla.trendgifapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.cagla.trendgifapp.R
 
 class MainActivity : AppCompatActivity() {
 

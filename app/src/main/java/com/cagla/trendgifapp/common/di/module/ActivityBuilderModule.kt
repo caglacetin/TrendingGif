@@ -1,6 +1,6 @@
 package com.cagla.trendgifapp.common.di.module
 
-import com.cagla.trendgifapp.MainActivity
+import com.cagla.trendgifapp.ui.MainActivity
 import com.cagla.trendgifapp.common.di.scope.ActivityScope
 import com.cagla.trendgifapp.ui.TrendingGifActivityModule
 import dagger.Module
