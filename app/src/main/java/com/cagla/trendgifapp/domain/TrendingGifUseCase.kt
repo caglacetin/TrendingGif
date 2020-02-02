@@ -6,7 +6,7 @@ import com.cagla.trendgifapp.data.response.TrendingGifModel
 import io.reactivex.Observable
 import javax.inject.Inject
 
-class TrendingGifInteractor @Inject constructor(
+class TrendingGifUseCase @Inject constructor(
   private val repository: GiphyRepository,
   private val trendingGifMapper: TrendingGifMapper
 ) {
