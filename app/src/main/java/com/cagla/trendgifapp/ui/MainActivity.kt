@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
 import com.bumptech.glide.Glide
 import com.cagla.trendgifapp.R
 import com.cagla.trendgifapp.common.ui.observeNonNull
@@ -27,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
 
     binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-    trendingGifViewModel = ViewModelProviders.of(this, viewModelProviderFactory).get(TrendingGifViewModel::class.java)
+    trendingGifViewModel = ViewModelProvider(this, viewModelProviderFactory).get(TrendingGifViewModel::class.java)
 
     trendingGifViewModel.getTrendingGifsLiveData().observeNonNull(this) {
       renderTrendingGifs(it)
