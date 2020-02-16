@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface GiphyService {
 
-  @GET("trending/")
+  @GET("trending")
   fun fetchTrendingGif(): Observable<TrendingGifResponse>
 
 }
